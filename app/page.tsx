@@ -50,7 +50,7 @@ export default function Home() {
       ath: "$300K",
       contract: "BHK7KBUdq9kRA4mwY15cvv7YdLy4wb8QWy3q3cWtpump",
       status: "OPERATIONAL",
-      website: null,
+      website: undefined,
       closedSource: true
     },
     {
@@ -124,21 +124,35 @@ export default function Home() {
 
         {/* Pumpathon Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          {/* Placeholder card */}
+          {/* A.R.C card */}
           <div className="bg-white/70 backdrop-blur-sm rounded-lg p-4 flex flex-col">
             <div className="flex justify-between items-start mb-2">
-              <h3 className="text-base font-semibold text-gray-900">Coming Soon</h3>
-              <span className="flex items-center gap-1.5 text-xs text-gray-500">
-                <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
-                TBA
+              <h3 className="text-base font-semibold text-gray-900">A.R.C</h3>
+              <span className="flex items-center gap-1.5 text-xs text-green-600">
+                <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+                OPERATIONAL
               </span>
             </div>
             <p className="text-xs text-gray-500 mb-2">Pumpathon 2026</p>
-            <p className="text-sm text-gray-700 mb-2">Exciting new project built for the pumpathon</p>
+            <p className="text-sm text-gray-700 mb-2">ARC is decentralized infrastructure that automatically routes protocol and creator fees into on-chain liquidity actions instead of human wallets.</p>
             <div className="flex flex-wrap gap-2 mb-2">
-              <span className="px-2 py-0.5 bg-gray-100 text-gray-700 text-xs rounded">
-                Upcoming
+              <span className="px-2 py-0.5 bg-amber-100/80 text-amber-900 text-xs rounded">
+                DeFi Infrastructure
               </span>
+              <span className="px-2 py-0.5 bg-amber-100/80 text-amber-900 text-xs rounded">
+                Automated
+              </span>
+            </div>
+            <div className="flex gap-2 items-center pt-2 border-t border-gray-200 mt-auto">
+              <a 
+                href="https://github.com/chandlergims/a.r.c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+                title="View on GitHub"
+              >
+                <GithubLogo size={16} weight="regular" />
+              </a>
             </div>
           </div>
         </div>
@@ -204,7 +218,7 @@ export default function Home() {
                     <GithubLogo size={16} weight="regular" className="text-gray-400" />
                     <span className="text-xs text-gray-500 italic">This project is closed source</span>
                   </>
-                ) : (
+                ) : project.website ? (
                   <a 
                     href={project.website}
                     target="_blank"
@@ -214,7 +228,7 @@ export default function Home() {
                   >
                     <GithubLogo size={16} weight="regular" />
                   </a>
-                )}
+                ) : null}
               </div>
             </div>
           ))}
