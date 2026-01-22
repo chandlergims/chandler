@@ -18,13 +18,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "chandler",
     description: "vibe coding hobbies / projects for the trenches",
-    images: ["/logo.png"],
+    images: ["/mOCNpkOF_400x400.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "chandler",
     description: "vibe coding hobbies / projects for the trenches",
-    images: ["/logo.png"],
+    images: ["/mOCNpkOF_400x400.png"],
   },
 };
 
