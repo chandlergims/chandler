@@ -1,7 +1,7 @@
 'use client';
 
 import Navbar from './components/Navbar';
-import { GithubLogo } from '@phosphor-icons/react';
+import { GithubLogo, XLogo } from '@phosphor-icons/react';
 
 export default function Home() {
   const projects = [
@@ -105,10 +105,10 @@ export default function Home() {
             Chandler Projects
           </h1>
           <p className="text-base font-normal text-gray-700 mb-8">
-            vibe coding hobbies / projects for the trenches
+            vibe coded open-source projects created by me!
           </p>
           <div className="flex justify-center gap-6 text-sm text-gray-800">
-            <span>24 repositories</span>
+            <span>100+ projects</span>
             <span>|</span>
             <span>2 chains (Solana & BSC)</span>
             <span>|</span>
@@ -124,20 +124,43 @@ export default function Home() {
 
         {/* Pumpathon Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          {/* A.R.C card */}
+          {/* clamp card */}
           <div className="bg-white/70 backdrop-blur-sm rounded-lg p-4 flex flex-col">
             <div className="flex justify-between items-start mb-2">
-              <h3 className="text-base font-semibold text-gray-900">A.R.C</h3>
+              <h3 className="text-base font-semibold text-gray-900">clamp</h3>
               <span className="flex items-center gap-1.5 text-xs text-green-600">
                 <span className="w-2 h-2 bg-green-600 rounded-full"></span>
                 OPERATIONAL
               </span>
             </div>
             <p className="text-xs text-gray-500 mb-2">Pumpathon 2026</p>
-            <p className="text-sm text-gray-700 mb-2">ARC is decentralized infrastructure that automatically routes protocol and creator fees into on-chain liquidity actions instead of human wallets.</p>
+            <p className="text-sm text-gray-700 mb-2">
+              an experiment into letting ai control its own operating system, inspired by @austingriffith{' '}
+              <a 
+                href="https://x.com/clawdbotatg" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 transition-colors font-medium"
+              >
+                clawd.atg.eth
+              </a>
+              {' '}and steipete{' '}
+              <a 
+                href="https://x.com/openclaw" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 transition-colors font-medium"
+              >
+                openclaw
+              </a>
+              {' '}that took the internet by storm
+            </p>
             <div className="flex flex-wrap gap-2 mb-2">
               <span className="px-2 py-0.5 bg-amber-100/80 text-amber-900 text-xs rounded">
-                DeFi Infrastructure
+                AI
+              </span>
+              <span className="px-2 py-0.5 bg-amber-100/80 text-amber-900 text-xs rounded">
+                AGI
               </span>
               <span className="px-2 py-0.5 bg-amber-100/80 text-amber-900 text-xs rounded">
                 Automated
@@ -145,13 +168,22 @@ export default function Home() {
             </div>
             <div className="flex gap-2 items-center pt-2 border-t border-gray-200 mt-auto">
               <a 
-                href="https://github.com/chandlergims/a.r.c"
+                href="https://github.com/chandlergims"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 title="View on GitHub"
               >
                 <GithubLogo size={16} weight="regular" />
+              </a>
+              <a 
+                href="https://x.com/clampbotcdlr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+                title="View on X"
+              >
+                <XLogo size={16} weight="regular" />
               </a>
             </div>
           </div>
