@@ -23,7 +23,7 @@ export default function Navbar() {
               <GithubLogo size={18} weight="regular" />
             </Link>
             <Link 
-              href="https://x.com/cdlrliveslife" 
+              href="https://x.com/cndlrliveslife" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-gray-900 transition-colors"
