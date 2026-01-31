@@ -116,26 +116,24 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Pumpathon Section */}
+        {/* Active Projects Section */}
         <div className="mb-6">
-          <h2 className="text-base font-semibold text-gray-800 mb-1">PUMPATHON</h2>
-          <p className="text-sm text-gray-600">projects and repositories built for the pumpathon</p>
+          <h2 className="text-base font-semibold text-gray-800 mb-1">ACTIVE PROJECTS</h2>
         </div>
 
-        {/* Pumpathon Cards Grid */}
+        {/* Active Projects Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          {/* clamp card */}
+          {/* moltchain card */}
           <div className="bg-white/70 backdrop-blur-sm rounded-lg p-4 flex flex-col">
             <div className="flex justify-between items-start mb-2">
-              <h3 className="text-base font-semibold text-gray-900">clamp</h3>
+              <h3 className="text-base font-semibold text-gray-900">moltchain</h3>
               <span className="flex items-center gap-1.5 text-xs text-green-600">
                 <span className="w-2 h-2 bg-green-600 rounded-full"></span>
                 OPERATIONAL
               </span>
             </div>
-            <p className="text-xs text-gray-500 mb-2">Pumpathon 2026</p>
             <p className="text-sm text-gray-700 mb-2">
-              an experiment into letting ai control its own operating system, inspired by @austingriffith{' '}
+              an experiment into creating a blockchain entirely by molt agents, inspired by @austingriffith{' '}
               <a 
                 href="https://x.com/clawdbotatg" 
                 target="_blank" 
@@ -175,15 +173,6 @@ export default function Home() {
                 title="View on GitHub"
               >
                 <GithubLogo size={16} weight="regular" />
-              </a>
-              <a 
-                href="https://x.com/clampbotcdlr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-                title="View on X"
-              >
-                <XLogo size={16} weight="regular" />
               </a>
             </div>
           </div>
